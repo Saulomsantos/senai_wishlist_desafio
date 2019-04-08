@@ -1,0 +1,22 @@
+Os desejos terão página de cadastro?
+R: "Um pop up talvez? Ou algo parecido com as etiquetas do Trello"
+
+Os desejos terão titúlo?
+R: "Sim"
+
+Haverá uma tela para o perfil do usuário?
+R: "À principio não"
+
+
+--------------RESPOSTAS------------------
+
+	"Haverá uma página que mostra todos os desejos de todos os 
+usuários"
+
+	"3 telas de preferência, a Home com uma breve descrição, 
+a aba de Login e a página onde mostrará a lista de desejos"
+
+	"Talvez tenhamos uma tela onde filtrará os desejos especificos
+de cada pessoa"
+
+	"APENAS O ADMIN PODERÁ FAZER O CADASTRO (como não percebi isso?)"
