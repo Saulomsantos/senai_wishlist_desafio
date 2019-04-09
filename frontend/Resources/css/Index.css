@@ -1,14 +1,48 @@
 * p{
     font-size: 24px;
+    font-family: 'Verdana';
+}
+
+* h1{
+    font-size: 48px;
+    font-family: 'Segoe UI';
+    margin-bottom: 2em;
+}
+
+.structure{
+    text-align: center;
+}
+
+.structure img{
+    display: inline-block;
+    margin: auto;
 }
 
 .first-container{
-    width: 35%;
-    height: 300px;
-    margin: 15px auto;
+    text-align: left;
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+}
+
+.first-container :nth-child(3){
+    margin-top: 50px;
 }
 
 .second-container{
-    width: 35%;
-    height: 300px
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.second-container :nth-child(3){
+    margin-top: 50px;
+}
+
+.second-container button{
+    margin: 20px 42.5%;
+    width: 15%;
 }
