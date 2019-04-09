@@ -12714,23 +12714,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\48975462811\\.nuget\\packages\\": {},
+    "C:\\Users\\39893838843\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\48975462811\\Documents\\Projeto_WishList\\senai_wishlist_desafio\\backend\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi.csproj",
+      "projectUniqueName": "C:\\Users\\39893838843\\Downloads\\senai_wishlist_desafio\\backend\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi.csproj",
       "projectName": "senai_wishlist_desafio_webapi",
-      "projectPath": "C:\\Users\\48975462811\\Documents\\Projeto_WishList\\senai_wishlist_desafio\\backend\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi.csproj",
-      "packagesPath": "C:\\Users\\48975462811\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\48975462811\\Documents\\Projeto_WishList\\senai_wishlist_desafio\\backend\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi\\obj\\",
+      "projectPath": "C:\\Users\\39893838843\\Downloads\\senai_wishlist_desafio\\backend\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi.csproj",
+      "packagesPath": "C:\\Users\\39893838843\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\39893838843\\Downloads\\senai_wishlist_desafio\\backend\\senai_wishlist_desafio_webapi\\senai_wishlist_desafio_webapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\48975462811\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\39893838843\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

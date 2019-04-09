@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace senai_wishlist_desafio_webapi
 {
@@ -17,17 +18,17 @@ namespace senai_wishlist_desafio_webapi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            //adiciona o Mvc ao projeto 
-            services.AddMvc()
+           // Adiciona o Mvc ao projeto 
+           services.AddMvc()
 
-           //Adiciona as opçoes do json
+           // Adiciona as opçoes do json
            .AddJsonOptions(options =>
            {
                options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
            })
            .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
 
-            //Adiciona o Cors ao projeto
+            // Adiciona o Cors ao projeto
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -37,13 +38,14 @@ namespace senai_wishlist_desafio_webapi
                     .AllowCredentials());
             });
 
-            //Adiciona o Swagger ao projeto passando algumas informações    
-            //https://docs.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new ConnectionInfo { Title = "WishList API", Version = "v1" });
-            //});
-            //implementa autenticação
+            // Adiciona o Swagger ao projeto passando algumas informações    
+            // https://docs.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "wishlist API", Version = "v1" });
+            });
+
+            // Implementa autenticação
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = "JwtBearer";
@@ -51,23 +53,23 @@ namespace senai_wishlist_desafio_webapi
             })
             .AddJwtBearer("JwtBearer", options =>
             {
-                //define as opcoes 
+                // Define as opções 
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    //quem esta solicitando
+                    // Quem esta solicitando
                     ValidateIssuer = true,
-                    //quem esta validando
+                    // Quem esta validando
                     ValidateAudience = true,
-                    //definindo o tempo de expiracao
+                    // Definindo o tempo de expiracao
                     ValidateLifetime = true,
-                    // forma de criptografia
+                    // Forma de criptografia
                     IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("wishlist-chave-autenticacao")),
-                    //tempo de expiracao do token
+                    // Tempo de expiracao do token
                     ClockSkew = TimeSpan.FromMinutes(30),
-                    //nome da issuer, de onde esta vindo 
-                    ValidIssuer = "wishlist.WebApi",
-                    //Nome da Audience, de onde esta vindo
-                    ValidAudience = "wishlist.WebApi"
+                    // Nome da issuer, de onde esta vindo 
+                    ValidIssuer = "wishlist.webapi",
+                    // Nome da Audience, de onde esta vindo
+                    ValidAudience = "wishlist.webapi"
                 };
             });
 
@@ -80,15 +82,17 @@ namespace senai_wishlist_desafio_webapi
             {
                 app.UseDeveloperExceptionPage();
             }
+
             // Enable middleware to serve generated Swagger as a JSON endpoint.
-            //app.UseSwagger();
+            app.UseSwagger();
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
             // specifying the Swagger JSON endpoint.
-            //app.UseSwaggerUI(c =>
-            //{
-            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "wishlist");
-            //});
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "wishlist");
+            });
+
             //Habilita a autenticação
             app.UseAuthentication();
 
