@@ -5,18 +5,58 @@ Os desejos terão titúlo?
 R: "Sim"
 
 Haverá uma tela para o perfil do usuário?
-R: "À principio não"
+R: "A principio não"
 
 
 --------------RESPOSTAS------------------
 
-	"Haverá uma página que mostra todos os desejos de todos os 
-usuários"
+	"Haverá uma página que mostra todos 
+os desejos de todos os usuários"
 
-	"3 telas de preferência, a Home com uma breve descrição, 
-a aba de Login e a página onde mostrará a lista de desejos"
+	"3 telas de preferência, a Home 
+com uma breve descrição, a aba de Login e 
+a página onde mostrará a lista de desejos"
 
-	"Talvez tenhamos uma tela onde filtrará os desejos especificos
-de cada pessoa"
+	"Talvez tenhamos uma tela onde filtrará os desejos especificos de cada pessoa"
 
 	"APENAS O ADMIN PODERÁ FAZER O CADASTRO (como não percebi isso?)"
+
+	"PALETA DE CORES
+
+Para o body:
+- Hex: #485373
+- RGB: (72, 83, 115);
+	Com 50% opacidade
+
+Footer:
+- Hex: #485373 (nada alterado)
+- RGB: (72, 83, 115);
+
+
+Text-"Decoration":
+- Hex: #40010D
+- RGB: (64, 1, 13);
+	Cor do sublinhado das frases na Home
+
+
+Font-Color:
+- Hex: #0D0D0D
+- RGB: (13, 13, 13);
+	Frescurinha pra manter na paleta
+	"O meu coraçãozinho, ele é PT"
+
+
+Logo:
+- "Dandeleion.png"
+	Acrescentar um filtro para mudar a
+tonalidade para um ciano/turquesa escuro
+
+
+Border-Container-Wish:
+- Hex: #40010D
+- RGB: (64, 1, 13);
+	Os containers serão brancos"
+
+
+	"Essa coisa de usar a color pallet
+da Hagane Miku é full delirio meu ;-;"
