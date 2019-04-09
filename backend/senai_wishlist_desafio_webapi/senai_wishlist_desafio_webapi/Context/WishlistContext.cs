@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace senai_wishlist_desafio_webapi.Domains
 {
@@ -23,7 +21,15 @@ namespace senai_wishlist_desafio_webapi.Domains
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=SENAI_WISHLIST_DESAFIO; user id=sa; pwd=132;");
+                // ATENÇÃO
+                // ALTERAR O DATA SOURCE DE ACORDO COM O BANCO DE DADOS QUE ESTÁ INSTALADO NA SUA MÁQUINA
+                // Apesar dos bancos de dados terem o mesmo nome (SENAI_WISHLIST_DESAFIO), o servidor pode ser diferente
+                // No SENAI utilizamos SqlExpress (linha comentada)
+                // Eu (Saulo) uso SqlDeveloper na minha máquina
+                // Verifique qual servidor você instalou na sua e altere antes de rodar a API
+
+                // optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=SENAI_WISHLIST_DESAFIO; user id=sa; pwd=132;");
+                optionsBuilder.UseSqlServer("Data Source=.\\SqlDeveloper; Initial Catalog=SENAI_WISHLIST_DESAFIO; integrated security=true;");
             }
         }
 

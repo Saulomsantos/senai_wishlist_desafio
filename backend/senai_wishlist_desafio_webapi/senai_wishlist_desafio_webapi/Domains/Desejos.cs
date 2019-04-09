@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace senai_wishlist_desafio_webapi.Domains
+﻿namespace senai_wishlist_desafio_webapi.Domains
 {
     public partial class Desejos
     {
