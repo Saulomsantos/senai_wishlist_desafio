@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using senai_wishlist_desafio_webapi.Domains;
 using senai_wishlist_desafio_webapi.Interfaces;
-using senai_wishlist_desafio_webapi.Repositorios;
+using senai_wishlist_desafio_webapi.Repositories;
 
 namespace senai_wishlist_desafio_webapi.Controllers
 {
@@ -14,14 +12,56 @@ namespace senai_wishlist_desafio_webapi.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
-        public IUsuarioRepository UsuarioRepository { get; set; }
+        private IUsuarioRepository UsuarioRepository { get; set; }
 
         public UsuariosController()
         {
             UsuarioRepository = new UsuarioRepository();
         }
 
+        [Authorize(Roles = "1")]
+        [HttpGet]
+        public IActionResult ListarUsuarios()
+        {
+            try
+            {
+                return Ok(UsuarioRepository.ListarUsuarios());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
 
+        [Authorize(Roles = "1")]
+        [HttpPost]
+        public IActionResult CadastrarUsuario(Usuarios usuario)
+        {
+            try
+            {
+                UsuarioRepository.CadastrarUsuario(usuario);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(); ;
+            }
+        }
+
+        [Authorize(Roles = "1")]
+        [HttpPut]
+        public IActionResult EditarUsuario(Usuarios usuario)
+        {
+            try
+            {
+                UsuarioRepository.EditarUsuario(usuario);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
 
 
     }
