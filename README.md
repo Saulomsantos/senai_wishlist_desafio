@@ -24,7 +24,7 @@ No script de manipulação (DML_02), clique em executar. As tabelas serão alime
 No script de consulta (DQL_03), clique em executar. Dessa forma é possível visualizar se os dados foram inseridos corretamente.
 
 # Importando a coleção JSON para o Postman
-Abra o Postman e importe a coleção de requisições através do arquivo DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\postman collectionSENAI_WISHLIST_DESAFIO.postman_collection.json
+Abra o Postman e importe a coleção de requisições através do arquivo DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\postman collection\SENAI_WISHLIST_DESAFIO.postman_collection.json
 Neste momento, deve constar a seguinte estrutura:
 
 - USUARIOS
