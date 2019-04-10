@@ -28,8 +28,8 @@ namespace senai_wishlist_desafio_webapi.Domains
                 // Eu (Saulo) uso SqlDeveloper na minha máquina
                 // Verifique qual servidor você instalou na sua e altere antes de rodar a API
 
-                // optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=SENAI_WISHLIST_DESAFIO; user id=sa; pwd=132;");
-                optionsBuilder.UseSqlServer("Data Source=.\\SqlDeveloper; Initial Catalog=SENAI_WISHLIST_DESAFIO; integrated security=true;");
+                optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=SENAI_WISHLIST_DESAFIO; user id=sa; pwd=132;");
+                //optionsBuilder.UseSqlServer("Data Source=.\\SqlDeveloper; Initial Catalog=SENAI_WISHLIST_DESAFIO; integrated security=true;");
             }
         }
 
