@@ -60,7 +60,12 @@ Com a API em execução, já é possível simular as requisições pelo Postman.
 
 O que deve ser informado no corpo da requisição pode ser consultado na documentação pelo arquivo DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\documentacao\senai_wishlist_desafio_documentacao.pdf ou através da url https://localhost:5000/swagger
 
-##OBS.: 
+O usuário padrão para realizar o login já está inserido no corpo:
+
+email : admin@admin.com
+senha: admin12345
+
+#OBS.: 
 
 É de extrema importância alterar no arquivo WishlistContext.cs o Data Source utilizado na sua máquina, na linha de optionsBuilder.
 Do contrário as requisições retornarão 400 - Bad Request.
