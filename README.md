@@ -83,3 +83,8 @@ Execute o cmd no caminho DiretorioOndeORepositorioFoiClonado\senai_wishlist_desa
 Segunda:
 Abra o diretório DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\frontend\senai_wishlist_desafio no VisualStudio Code, abra o console de comandos (um atalho é aperta ctrl + ') e digite npm start e aperte enter.
 
+A página inicial contém algumas informações sobre o sitema.
+
+Além desta, foram incluídas as páginas e Login (https://localhost:3000/api/Login) e Desejos (https://localhost:3000/api/Desejos).
+
+Qualquer outra outra URL resultará em uma página não encontrada.
