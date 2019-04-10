@@ -65,7 +65,7 @@ O usuário padrão para realizar o login já está inserido no corpo:
 email : admin@admin.com
 senha: admin12345
 
-# # OBS.: 
+# obs.: 
 
 É de extrema importância alterar no arquivo WishlistContext.cs o Data Source utilizado na sua máquina, na linha de optionsBuilder.
 Do contrário as requisições retornarão 400 - Bad Request.
