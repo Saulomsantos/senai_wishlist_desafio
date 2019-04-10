@@ -60,6 +60,11 @@ Com a API em execução, já é possível simular as requisições pelo Postman.
 
 O que deve ser informado no corpo da requisição pode ser consultado na documentação pelo arquivo DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\documentacao\senai_wishlist_desafio_documentacao.pdf ou através da url https://localhost:5000/swagger
 
+##OBS.: 
+
+É de extrema importância alterar no arquivo WishlistContext.cs o Data Source utilizado na sua máquina, na linha de optionsBuilder.
+Do contrário as requisições retornarão 400 - Bad Request.
+
 # Executando a aplicação web
 O primeiro passo a ser realizado é instalar as dependências da biblioteca React. 
 Para isso, execute o cmd no caminho DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\frontend\senai_wishlist_desafio e digite npm install e apert enter.
