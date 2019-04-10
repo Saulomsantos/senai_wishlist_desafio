@@ -9,11 +9,13 @@ git clone https://github.com/Saulomsantos/senai_wishlist_desafio.git
 # Criando o banco de dados
 Com os arquivos do repositório atualizados, abra o SQL Server Management Studio e em seguida os seguintes arquivos:
 
+
 DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\bd\scripts\SENAI_WISHLIST_DESAFIO_CRIACAO_DDL_01.sql
 
 DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\bd\scripts\SENAI_WISHLIST_DESAFIO_MANIPULACAO_DML_02.sql
 
 DiretorioOndeORepositorioFoiClonado\senai_wishlist_desafio\bd\scripts\SENAI_WISHLIST_DESAFIO_CONSULTA_DQL_03.sql
+
 
 No script de criação (DDL_01), clique em executar. Assim, o banco de dados será criado com as tabelas necessárias.
 
