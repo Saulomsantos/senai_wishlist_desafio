@@ -4,6 +4,9 @@ import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-d
 import './index.css';
 import App from './pages/Home/App';
 import NotFound from './pages/NotFound/NotFound';
+import WishList from './pages/WishList/WishList';
+import NotRegistered from './pages/NotRegistered/NotRegistered';
+import Login from './pages/Login/Login';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -12,6 +15,8 @@ const routing = (
         <div>
             <Switch>
                 <Route exact path="/" component={App}></Route>
+                <Route path="/Login" component={Login}></Route>
+                <Route path="/Desejos" component={WishList}></Route>
                 <Route component={NotFound}></Route>
             </Switch>
         </div>

@@ -1,0 +1,25 @@
+.escopo{
+text-align: center;
+font-size: 36px;
+word-spacing: 30px;
+}
+
+.escopo :nth-child(1){
+    font-size: 48px;
+}
+
+.Desejos{
+    width: 60%;
+    margin: 10% auto;
+    height: 30%;
+    padding: 30px;
+    border-spacing: 40px 70px;
+}
+
+.Desejos td{
+    border: solid 2px black;
+    width: 35%;
+    height: 20%;
+    text-align: center;
+    background-color: #fff;
+}

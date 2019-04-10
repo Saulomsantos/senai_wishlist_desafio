@@ -1,0 +1,15 @@
+.main-container{
+    height: 657px;
+    background-image: url('../Img/background.png');
+    text-align: center;
+}
+
+.main-container img{
+    height: 150px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.main-container h1{
+    transform: translateY(50%);
+}
